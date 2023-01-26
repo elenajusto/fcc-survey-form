@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1 id='title'>Responsive Web Design Survery Form</h1>
+  <p id='description'>Please fill out this form. Thank you ^_^</p>
+
+  <form id='survey-form'>
+
+    <label id='name-label'>Name<input id='name' type='text' placeholder='Enter your name' required/></label>
+
+    <label id='email-label'>Email<input id='email' type='email' placeholder='Enter your email' required/></label>
+
+    <label id='number-label'>Age<input id='number' type='number' min='12' max='120' placeholder='Age' required/></label>
+
+    <label> Which option best describes your current role?
+      <select id='dropdown'>
+        <option value='0'>Select current role</option>
+        <option value='1'>Student</option>
+        <option value='2'>Full Time Employed</option>
+        <option value='3'>Part Time Employed</option>
+        <option value='3'>Other</option>
+        <option value='3'>Prefer not to say</option>
+      </select>
+    </label>
+
+    <label>Would you recommend freeCodeCamp to a friend?
+    <label><input class="inline" name="radio-button" type="radio" value='1'/>Yes</label>     
+  <label><input class="inline" name="radio-button" type="radio" value='1'/>Maybe</label>
+  <label><input class="inline" name="radio-button" type="radio" value='1'/>No</label>
+  </label>
+
+  <label>What would you like to see improved?</label>
+  <label><input class="inline" type="checkbox" value='1'/>Front-end Projects</label>
+  <label><input class="inline" type="checkbox" value='2'/>Back-end Projects</label>
+  <label><input class="inline" type="checkbox" value='3'/>Data Visualization</label>
+
+  <label for="comment-area">Any comments or suggestions?
+          <textarea id="comment-area" name="comment-area" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+
+  <input id='submit' type="submit" value="Submit" />
+
+  </form>
+
+</body>
+
+</html>
